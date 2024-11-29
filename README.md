@@ -80,7 +80,7 @@ Expected Output
 
 2
 
-Explanation - 2 is x and 3 is y in the input. So 2 is printed 3 times on the output.
+**Explanation - 2 is x and 3 is y in the input. So 2 is printed 3 times on the output.**
 ---------------------------------------------------------------------------------------
 **logical**
 1. x=2
