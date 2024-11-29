@@ -82,7 +82,7 @@ Expected Output
 
 Explanation - 2 is x and 3 is y in the input. So 2 is printed 3 times on the output.
 ---------------------------------------------------------------------------------------
-### logical
+**logical**
 1. x=2
     y=3
 2. don't write the program 
@@ -100,7 +100,7 @@ for (int num=0; num<y; num++)
     cout<< x <<endl;
 }
 ```
-### Program
+** Program**
 ```
 // Online C compiler to run C program online
 #include <stdio.h>
