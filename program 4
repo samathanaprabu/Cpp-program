@@ -17,3 +17,29 @@ Expected Output:
 
 Small */
 
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int size; 
+    cout << "Enter the Your Size :";
+    cin >> size;
+    switch(size){
+        case 29:
+         cout << size << " " <<"is Small Size";
+         break;
+        case 30:
+         cout << size << " " <<"is Medium Size";
+         break;
+        case 38:
+         cout << size << " " <<"is Large Size";
+         break;
+        case 42:
+         cout << size << " " <<"is XLarge Size";
+         break;
+        default:
+         cout << size << " " <<"is Invalid Size, Could you check the size";
+}
+    return 0;
+}
