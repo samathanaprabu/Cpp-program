@@ -2,7 +2,7 @@
 
 Given mark of student, Print the Grade
 
-Grade A if mark is greater than or equal to 90
+Grade A if mark is greater than or equal to 90 
 
 Grade B if mark is greater than or equal to 80
 
@@ -22,3 +22,36 @@ Grade A
 Explanation: Here 95 is greater than or equal to 90 so its Grade A
  */
 
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int a; 
+    cout << "Enter the student Mark :";
+    cin >> a;
+    if (a>=35){
+        if(a>=90 && a<=100){
+            cout << "Grade A " <<endl;
+            cout << "Explanation: Here"<< " " <<a << " " << "is greater than or equal to 90 so its Grade A" <<endl;
+        }else if(a>=80 && a<90){
+            cout << "Grade B " <<endl;
+            cout << "Explanation: Here"<< " " <<a << " " << "is greater than or equal to 80 so its Grade B" <<endl;
+        } else if(a>=60 && a<80){
+            cout << "Grade C " <<endl;
+            cout << "Explanation: Here"<< " " <<a << " " << "is greater than or equal to 60 so its Grade C" <<endl;
+        }
+        else if(a>=35 && a<60) {
+            cout << "Grade D " <<endl;
+            cout << "Explanation: Here"<< " " <<a << " " << "is greater than or equal to 35 so its Grade D" <<endl;
+        }
+     else {
+            cout << "Colud you Check your Input value" <<endl;
+        }
+    }
+    else{
+        cout << "Fail Mark" <<endl;
+        cout << "Here"<< " " <<a << " " << "mark is lesser than 35 so its Fail" <<endl;
+    }
+    return 0;
+}
