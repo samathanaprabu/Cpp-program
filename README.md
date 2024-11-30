@@ -38,7 +38,7 @@ Step 03 : printout the out put
     
 **Finally blow i showing c++ proram full code**
 
-< #include <iostream>
+``` #include <iostream>
 #include <string>
 using namespace std;
 int main() 
@@ -59,7 +59,8 @@ int main()
     cout << text << endl;
     cout << character << endl;
     return 0;
-} >
+} 
+```
 
 
 
