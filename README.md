@@ -102,9 +102,8 @@ for (int num=0; num<y; num++)
     cout<< x <<endl;
 }
 ```
-** Program**
+**Program**
 ```
-// Online C compiler to run C program online
 #include <stdio.h>
 #include <iostream>
 using namespace std;
