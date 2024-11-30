@@ -1,0 +1,50 @@
+Prob 2:
+
+Write a program to take x and print multiples of x till 1000.
+
+Input:
+
+100
+
+Expected Output:
+
+100
+
+200
+
+300
+
+400
+
+500
+
+600
+
+700
+
+800
+
+900
+
+1000
+
+Explanation - Input is 100, multiples of 100 is 100*1, 100*2, 100*3 and so on till 1000.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cout << "Enter a number: ";
+    cin >> x;
+
+    for (int i = 1; i * x <= 1000; ++i) {
+        cout << i * x << endl;
+    }
+
+    return 0;
+}
