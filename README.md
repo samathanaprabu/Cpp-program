@@ -156,7 +156,8 @@ Explanation - Input is 100, multiples of 100 is 100*1, 100*2, 100*3 and so on ti
 
 
 
-``` #include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -197,7 +198,8 @@ NandyRaja
 Explanation - Nandy is the firstName, Raja is the lastName and n is 5, so the expected output has NandyRaja printed 5 times.
 ---------------------------------------------------------------------------------------------------------------------------
 
-```#include <iostream>
+```
+#include <iostream>
 using namespace std;
 void printFullName(string firstName, string lastName, int n) {
     string fullName = firstName + lastName;
