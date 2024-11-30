@@ -121,3 +121,101 @@ for (int num=0; num<y; num++)
     return 0;
 }
 ```
+## Write a program to take x and print multiples of x till 1000.
+
+Input:
+
+100
+
+Expected Output:
+
+100
+
+200
+
+300
+
+400
+
+500
+
+600
+
+700
+
+800
+
+900
+
+1000
+
+Explanation - Input is 100, multiples of 100 is 100*1, 100*2, 100*3 and so on till 1000.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+``` #include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cout << "Enter a number: ";
+    cin >> x;
+
+    for (int i = 1; i * x <= 1000; ++i) {
+        cout << i * x << endl;
+    }
+
+    return 0;
+}
+```
+
+## Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+
+Input
+
+Nandy
+
+Raja
+
+5
+
+Expected output:
+
+NandyRaja
+
+NandyRaja
+
+NandyRaja
+
+NandyRaja
+
+NandyRaja
+
+Explanation - Nandy is the firstName, Raja is the lastName and n is 5, so the expected output has NandyRaja printed 5 times.
+---------------------------------------------------------------------------------------------------------------------------
+
+```#include <iostream>
+using namespace std;
+void printFullName(string firstName, string lastName, int n) {
+    string fullName = firstName + lastName;
+    for (int i = 0; i < n; i++) {
+        cout << fullName << endl;
+    }
+}
+
+int main() {
+    string firstName, lastName;
+    int n;
+    cout << "Enter the first name: ";
+    cin >> firstName;
+    cout << "Enter the last name: ";
+    cin >> lastName;
+    cout << "Enter the number of times to print the full name: ";
+    cin >> n;
+    printFullName(firstName, lastName, n);
+
+    return 0;
+}
+```
