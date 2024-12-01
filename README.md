@@ -1,7 +1,8 @@
 # Cpp-program
 Beginning Programmer 
 
-# Prob 1 : Write a program that takes an integer, then a string, then a char from the user and prints them in the screen.
+# Write a program that takes an integer, then a string, then a char from the user and prints them in the screen.
+
 Input:  2 Name y
 
 **Expected Output:**
