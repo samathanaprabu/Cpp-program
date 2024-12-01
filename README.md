@@ -122,7 +122,7 @@ for (int num=0; num<y; num++)
     return 0;
 }
 ```
-## Write a program to take x and print multiples of x till 1000.
+# Write a program to take x and print multiples of x till 1000.
 
 Input:
 
@@ -173,7 +173,7 @@ int main() {
 }
 ```
 
-## Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+# Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
 
 Input
 
