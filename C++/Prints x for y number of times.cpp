@@ -1,4 +1,4 @@
-Prob 1:
+/* Prob 1:
 
 Write a program which takes two values x and y. Prints x for y number of times.
 
@@ -38,7 +38,8 @@ for (int num=0; num<y; num++)
 ```
 ### Program
 ```
-// Online C compiler to run C program online
+// Online C compiler to run C program online */
+
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -55,4 +56,3 @@ for (int num=0; num<y; num++)
 
     return 0;
 }
-```

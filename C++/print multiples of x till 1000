@@ -1,4 +1,4 @@
-Prob 2:
+/* Prob 2:
 
 Write a program to take x and print multiples of x till 1000.
 
@@ -32,7 +32,7 @@ Explanation - Input is 100, multiples of 100 is 100*1, 100*2, 100*3 and so on ti
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+*/
 
 #include <iostream>
 using namespace std;

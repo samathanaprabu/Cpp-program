@@ -1,4 +1,4 @@
-Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+/* Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
 
 Input
 
@@ -20,10 +20,10 @@ NandyRaja
 
 NandyRaja
 
-Explanation - Nandy is the firstName, Raja is the lastName and n is 5, so the expected output has NandyRaja printed 5 times.
----------------------------------------------------------------------------------------------------------------------------
+Explanation - Nandy is the firstName, Raja is the lastName and n is 5, so the expected output has NandyRaja printed 5 times. 
+---------------------------------------------------------------------------------------------------------------------------*/
 
-```#include <iostream>
+#include <iostream>
 using namespace std;
 void printFullName(string firstName, string lastName, int n) {
     string fullName = firstName + lastName;
@@ -44,4 +44,4 @@ int main() {
     printFullName(firstName, lastName, n);
 
     return 0;
-}```
+}
