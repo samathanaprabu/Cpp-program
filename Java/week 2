@@ -1,0 +1,189 @@
+Teena is fond of patterns, but she needs your help to solve the below pattern. Given n as input, teena wants you to print the below pattern.
+
+Input Format
+
+n = 5
+
+Constraints
+
+1<=n<=100
+
+Output Format
+
+12345
+678910
+1112131415
+1617181920
+2122232425
+Sample Input 0
+
+3
+Sample Output 0
+
+123
+456
+789
+Sample Input 1
+
+2
+Sample Output 1
+
+12
+34
+```
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt(); // Number of rows
+        int num = 1; // Starting number
+        
+        for (int i = 1; i <= n; i++) { // Loop for rows
+            for (int j = 1; j <= n; j++) { // Loop for columns
+                System.out.print(num); // Print the current number
+                num++; // Increment the number
+            }
+            System.out.println(); // Move to the next line
+        }
+        input.close(); // Close the Scanner
+    }
+}
+
+```
+
+
+Rex loves diamonds and today he wants diamonds to be printed using code. He will give you a number n and you should print a diamond for him as below based on n.
+
+Input Format
+
+n = 5
+
+Constraints
+
+1<=n<=1000
+
+Output Format
+
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+*********
+ ******* 
+  *****  
+   ***   
+    *
+Sample Input 0
+
+3
+Sample Output 0
+
+  *
+ ***
+*****
+*****
+ ***
+  *
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt(); // Input size for the pattern
+
+        // Upper Section
+        for (int i = 1; i < n; i++) { // Loop for rows (excluding the widest row)
+            for (int j = 1; j <= n - i; j++) { // Spaces
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) { // Stars
+                System.out.print("*");
+            }
+            System.out.println(); // Move to the next line
+        }
+
+        // Middle Section (widest row)
+        for (int i = 1; i <= 2 * n - 1; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+
+        // Lower Section
+        for (int i = n - 1; i >= 1; i--) { // Loop for rows (inverted triangle)
+            for (int j = 1; j <= n - i; j++) { // Spaces
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) { // Stars
+                System.out.print("*");
+            }
+            System.out.println(); // Move to the next line
+        }
+
+        input.close(); // Close the scanner
+    }
+}
+```
+
+
+
+Given an integer N, you need to print the following pattern.
+
+Input Format
+
+5
+
+Constraints
+
+1 <= n <= 100
+
+Output Format
+
+12345
+22345
+33345
+44445
+55555
+Sample Input 0
+
+3
+Sample Output 0
+
+123
+223
+333
+Sample Input 1
+
+5
+Sample Output 1
+
+12345
+22345
+33345
+44445
+55555
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner input = new Scanner(System.in);
+        int n = input.nextInt(); 
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) { 
+                if (j < i) { 
+                    System.out.print(i);
+                } else {
+                    System.out.print(j);
+                }
+            }
+            System.out.println();
+        }
+    }
+}
