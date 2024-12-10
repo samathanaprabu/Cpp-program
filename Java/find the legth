@@ -1,0 +1,36 @@
+Write a program that gets n as input and print the number of digits in the number
+
+Testcase 1 :
+
+Input : 
+
+325345
+
+Expected output:
+
+6
+
+
+
+Testcase 2 :
+
+Input : 
+
+9879
+
+Expected output:
+
+4
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n=s.nextInt();
+        int num_digital=String.valueOf(n).length();
+        System.out.println(num_digital);
+    }
+}
