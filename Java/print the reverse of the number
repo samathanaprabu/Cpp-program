@@ -1,0 +1,102 @@
+Write a program that gets n as input and print the reverse of the number
+
+Testcase 1 :
+
+Input : 
+
+325345
+
+Expected output:
+
+543523
+
+
+
+Testcase 2 :
+
+Input : 
+
+987987
+
+Expected output:
+
+789789
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in); 
+int n = s.nextInt(); 
+int reversed = 0; 
+while (n != 0) { 
+int digit = n % 10; 
+reversed = reversed * 10 + digit; 
+n = n / 10; 
+} 
+System.out.println(reversed);
+    }
+}
+Step-by-Step Execution:
+Input: The user inputs 325345.
+
+Initialization:
+
+n is set to 325345.
+
+reversed is initialized to 0.
+
+First Iteration:
+
+digit = n % 10 → digit = 325345 % 10 → digit = 5.
+
+reversed = reversed * 10 + digit → reversed = 0 * 10 + 5 → reversed = 5.
+
+n = n / 10 → n = 325345 / 10 → n = 32534.
+
+Second Iteration:
+
+digit = n % 10 → digit = 32534 % 10 → digit = 4.
+
+reversed = reversed * 10 + digit → reversed = 5 * 10 + 4 → reversed = 54.
+
+n = n / 10 → n = 32534 / 10 → n = 3253.
+
+Third Iteration:
+
+digit = n % 10 → digit = 3253 % 10 → digit = 3.
+
+reversed = reversed * 10 + digit → reversed = 54 * 10 + 3 → reversed = 543.
+
+n = n / 10 → n = 3253 / 10 → n = 325.
+
+Fourth Iteration:
+
+digit = n % 10 → digit = 325 % 10 → digit = 5.
+
+reversed = reversed * 10 + digit → reversed = 543 * 10 + 5 → reversed = 5435.
+
+n = n / 10 → n = 325 / 10 → n = 32.
+
+Fifth Iteration:
+
+digit = n % 10 → digit = 32 % 10 → digit = 2.
+
+reversed = reversed * 10 + digit → reversed = 5435 * 10 + 2 → reversed = 54352.
+
+n = n / 10 → n = 32 / 10 → n = 3.
+
+Sixth Iteration:
+
+digit = n % 10 → digit = 3 % 10 → digit = 3.
+
+reversed = reversed * 10 + digit → reversed = 54352 * 10 + 3 → reversed = 543523.
+
+n = n / 10 → n = 3 / 10 → n = 0.
+
+End of Loop: The loop terminates as n is now 0.
+
+Output: The program prints 543523.
+
+So, the reverse of 325345 is 543523. Let me know if you need any further assistanc
